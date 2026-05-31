@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Coupons </title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f5f7fa; font-family: Arial, sans-serif;padding: 20px 0px;">
+
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px 40px; border-radius: 6px;">
+        <!-- Header -->
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/blueera.png" alt="Company Logo" style="width: 6rem;" />
+        </div>
+
+        <!-- Greeting -->
+        <p style="font-size: 18px; margin-bottom: 10px;">
+            Hi <span style="font-weight: 600;">Ramesh</span>,
+        </p>
+
+        <!-- Message -->
+        <div
+            style="display: flex;flex-direction: column;row-gap: 16px;color: #6d6d6d; margin-bottom: 30px;font-size: 14px;">
+            <p style="line-height: 1.6;">
+                Thanks for using ${account.name}. This email is the receipt for your purchase. No payment
+                is due. </p>
+
+            <p style="line-height: 1.6;"> This purchase will appear as "${credit_card_statement_name} " on your credit
+                card statement
+                for your ${credit_card_brand} ending in ${credit_card_last_four} . Need to
+                <a href="#" style="color: #3869D4;">update your payment information?</a>
+            </p>
+        </div>
+
+
+        <!-- Coupon Section -->
+        <div
+            style="background-color: #f0f4ff; padding:35px 20px 30px 20px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
+            <h2 style="margin: 0 0 10px; font-size: 18px;">10% off your next purchase!</h2>
+            <p style="margin: 0 0 20px; font-size: 14px;color: #6d6d6d;">
+                Thanks for your support! Here’s a coupon for 10% off your next purchase before
+                <strong>${expiration_date}</strong>.
+            </p>
+            <a href="#"
+                style="display: inline-block; background-color: #3869D4; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-size: 14px;">Use
+                my coupon now</a>
+        </div>
+
+        <!-- Invoice -->
+        <table width="100%" cellpadding="0" cellspacing="0" style="padding: 18px 0px;">
+            <tr>
+                <td style="font-size: 14px; font-weight: bold;">${receipt_id}</td>
+                <td style="font-size: 14px; text-align: right;">${date}</td>
+            </tr>
+        </table>
+
+        <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th align="left"
+                        style="border-bottom: 1px solid #ddd;color: #6d6d6d; font-size: 14px;padding: 10px 0px;">
+                        Description
+                    </th>
+                    <th align="right"
+                        style="border-bottom: 1px solid #ddd;color: #6d6d6d; font-size: 14px;padding: 12px 0px;">Amount
+                    </th>
+                </tr>
+
+                <tr>
+                    <th align="left"
+                        style="border-bottom: 1px solid #ddd;color: #6d6d6d; font-size: 14px;padding: 10px 0px;">
+                        Description
+                    </th>
+                    <th align="right"
+                        style="border-bottom: 1px solid #ddd;color: #6d6d6d; font-size: 14px;padding: 12px 0px;">Amount
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold; font-size: 14px;padding: 20px 0px;">Total</td>
+                    <td align="right" style="font-weight: bold; font-size: 14px;padding: 20px 0px;">${total}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer Text -->
+        <p style="font-size: 13px; color: #555;margin: 20px 0px;">
+            If you have any questions about this invoice, simply reply to this email or reach out to our
+            <a href="#" style="color: #3869D4;">support team</a> for help.
+        </p>
+
+        <p style="font-size: 13px; color: #555;">
+            Cheers, <br />
+            The ${account.name} Team
+        </p>
+
+        <hr style="border: none; border-top: 1px solid #eaeaea; margin: 20px 0;" />
+
+        <div style="display: flex;flex-direction: column;row-gap: 14px;">
+            <p style="font-size: 12px; color: #999;">
+                Need a printable copy for your records? <span> <a href="#" style="color: #3869D4;">Download a PDF
+                        version</a>. </span>
+            </p>
+
+            <p style="font-size: 12px; color: #999;">
+                Moved recently? <span> <a href="#" style="color: #3869D4;"> Update your billing information </a>.
+                </span>
+            </p>
+        </div>
+
+
+    </div>
+    <p style="font-size: 11px; color: #999; text-align: center; margin-top: 20px;">
+        © 2025 ${account.name}. All rights reserved.<br />
+        1234 Street Rd, Suite 1234<br />
+        City, State, ZIP Code
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Wishes</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            max-width: 600px;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .left {
+            flex: 1 1 55%;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .left h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .left p {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .right {
+            flex: 1 1 45%;
+            position: relative;
+        }
+
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bubbles container */
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -50px;
+            border-radius: 50%;
+            animation: float 8s infinite ease-in;
+            opacity: 0.6;
+        }
+
+        .bubble:nth-child(1) {
+            left: 10%;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(1, 180, 240, 0.922);
+            /* Deep Sky Blue */
+            animation-duration: 7s;
+        }
+
+        .bubble:nth-child(2) {
+            left: 30%;
+            width: 15px;
+            height: 15px;
+            background-color: rgba(29, 154, 232, 0.5);
+            /* Light Sky Blue */
+            animation-duration: 9s;
+        }
+
+        .bubble:nth-child(3) {
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(11, 228, 231, 0.849);
+            /* Dark Turquoise */
+            animation-duration: 11s;
+        }
+
+        .bubble:nth-child(4) {
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(2, 165, 220, 0.968);
+            /* Light Blue */
+            animation-duration: 10s;
+        }
+
+        .bubble:nth-child(5) {
+            left: 85%;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(0, 89, 255, 0.696);
+            /* Cornflower Blue */
+            animation-duration: 13s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(-600px) scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Birthday Card with Bubbles -->
+    <div class="card">
+
+        <!-- Bubble Layer -->
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+
+        <!-- Left Text Section -->
+        <div class="left">
+            <h1>Happy Birthday,<br>Olivia Wilson!</h1>
+            <p>
+                Hi Everyone!<br><br>
+                We have some exciting news to share with you today. It’s our amazing Olivia Wilson’s birthday!<br><br>
+                Olivia is a valuable member of our team who always delivers excellent results, inspires others, and
+                brings joy to our workplace.
+                We are so lucky to have her on.<br><br>
+                Dear Olivia, we hope you have a fantastic day and enjoy your special gift from us. You deserve
+                it!<br><br>
+                Happy birthday!<br><br>
+                <strong>WZY Solution Co.</strong>
+            </p>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-MfgfSNYiCP4sqbH_O_WlF18PdyBBJ1h2w&s"
+                alt="Birthday" />
+        </div>
+        <!-- Bubble Layer -->
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Wilson - Graphic Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="Freshers.css"> -->
+    <style>
+        /* Reset and base styles */
+        @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Cedarville+Cursive&family=Great+Vibes&family=Italiana&family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Outfit;
+            /* "Arial, sans-serif"; */
+            line-height: 1.5;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+            font-family: Outfit;
+        }
+
+        /* A4 document styling */
+        .resume {
+            width: 210mm;
+            margin: 0 auto;
+            background-color: white;
+            padding: 15mm 10mm 5mm 10mm;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styles */
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #a9a9a9;
+            padding-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .resume .resume_name {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(42, 42, 42);
+            text-transform: uppercase;
+        }
+
+        .resume .resume_skill {
+            font-size: 14px;
+            padding-bottom: 8px;
+            font-weight: 600;
+            color: rgb(106, 106, 106);
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            font-size: 13px;
+            color: #5e5d5d;
+        }
+
+        .address-info {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 4px 0px;
+            font-size: 13px;
+            color: #5e5d5d;
+        }
+
+        .contact-info .contact_info {
+            cursor: pointer;
+        }
+
+        .contact-info .contact_info:hover {
+            color: #121212;
+            transition: 0.8s;
+        }
+
+        /* Two-column layout */
+        .resume-columns {
+            display: flex;
+            gap: 30px;
+        }
+
+        .left-column {
+            width: 30%;
+        }
+
+        .right-column {
+            width: 70%;
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 4px;
+        }
+
+        .education .education_head {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+            padding-bottom: 9px;
+        }
+
+        .education .passing_years {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #3f3f3f;
+        }
+
+        .education .baxtular_degree {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .education .university_names {
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .education .batcular_degreee {
+            /* font-size: 16px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 10px;
+            padding-bottom: 5px; */
+        }
+
+        /* Education section */
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item h4 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .education-item p {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+
+        /* Lists styling */
+        ul {
+            list-style-position: inside;
+            margin-left: 5px;
+        }
+
+        li {
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        /* Profile section */
+        .profile p {
+            font-size: 13px;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Experience section */
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h4 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .experience-item h5 {
+            font-size: 13px;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        /* References section */
+        .reference-item {
+            margin-bottom: 10px;
+        }
+
+        .reference-item .items_reference {
+            display: flex;
+        }
+
+        .expertise .experties_head {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .language .lang_head {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+
+        .experience .project_head {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .education-item .project_name {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .experience-item .name_dates {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .experience-item .dates_passing {
+            font-size: 11px;
+        }
+
+        .profile .profile_head {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .reference .references_head {
+            font-size: 16px;
+            color: black;
+        }
+
+        .certificate_head {
+            margin: 5px 0px;
+        }
+
+        .basic_details .basic_head {
+            font-size: 17px;
+            color: #333;
+        }
+
+        .reference-item h4 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .reference-item p {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 3px;
+        }
+
+        .years {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .border_right {
+            display: flex;
+            align-items: center;
+            column-gap: 6px;
+        }
+
+        .links {
+            color: #4b4b4b;
+            text-decoration: none;
+        }
+
+        .links:hover {
+            color: #131313;
+            transition: 0.8s;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .resume {
+                box-shadow: none;
+                padding: 20mm;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <header>
+            <p class="resume_name">OLIVIA WILSON</p>
+            <p class="resume_skill">Graphics Designer</p>
+            <div class="contact-info">
+                <p class="contact_info border_right"> <i class="fa-solid fa-phone"></i> <span> +123-456-7890 </span></p>
+                <p class="contact_info border_right"> <i class="fa-solid fa-envelope"></i> <span>
+                        hello@reallygreatsite.com </span> </p>
+                <p class="contact_info border_right"> <i class="fa-solid fa-laptop"></i> <span> www.reallygreatsite.com
+                    </span></p>
+                <p class="contact_info"> <i class="fa-brands fa-github"></i> www.github/@really.com</p>
+            </div>
+            <div class="address-info">
+                <p class="contact_info border_right"> <i class="fa-solid fa-wallet"></i> <span> Cur CTC : 5 LPA </span>
+                </p>
+                <p class="contact_info border_right"> <i class="fa-solid fa-wallet"></i> Exp CTC : 6.5 LPA </p>
+                <p class="contact_info border_right"> <i class="fa-solid fa-calendar-days"></i> <span> DOB : 1990-05-15
+                    </span> </p>
+                <p class="contact_info border_right"> <i class="fa-solid fa-location-dot"></i> Addr : <span
+                        style="white-space: nowrap;">123, ABC Street, New Delhi, India</span></p>
+            </div>
+        </header>
+
+        <div class="resume-columns">
+            <div class="left-column">
+                <section class="education">
+                    <p class="education_head">EDUCATION</p>
+                    <div class="education-item">
+                        <p class="baxtular_degree">Bachelor of Design</p>
+                        <p class="university_names">Wardere University</p>
+                        <p class="passing_years">2006 - 2008</p>
+                    </div>
+                    <div class="education-item">
+                        <p class="baxtular_degree">Bachelor of Design</p>
+                        <p class="university_names">Wardere University</p>
+                        <p class="passing_years">2006 - 2008</p>
+                    </div>
+                    <div class="education-item">
+                        <p class="baxtular_degree">Bachelor of Design</p>
+                        <p class="university_names">Wardere University</p>
+                        <p class="passing_years">2006 - 2008</p>
+                    </div>
+                </section>
+
+                <section class="expertise">
+                    <p class="experties_head">Key Skills</p>
+                    <ul>
+                        <li>Management Skills</li>
+                        <li>Digital Marketing</li>
+                        <li>Negotiation</li>
+                        <li>Critical Thinking</li>
+                        <li>Communication Skills</li>
+                        <li>Digital Marketing</li>
+                        <li>Negotiation</li>
+                    </ul>
+                </section>
+
+                <section class="language">
+                    <p class="lang_head">LANGUAGE</p>
+                    <ul>
+                        <li>English</li>
+                        <li>Spanish</li>
+                        <li>French</li>
+                    </ul>
+                </section>
+            </div>
+            <div style="border-right: 2px solid rgb(162, 162, 162);"></div>
+            <div class="right-column">
+                <!-- <section class="profile">
+                                                    <p class="profile_head">PROFILE</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                </section> -->
+
+                <section class="experience">
+                    <p class="project_head"> Experience </p>
+                    <div class="experience-item">
+                        <div class="name_dates">
+                            <h4>Ginyard International Co.</h4>
+                            <p class="dates_passing">2019 - 2020</p>
+                        </div>
+                        <h5>Product Design Manager</h5>
+                        <ul>
+                            <li>Working with the wider development team.</li>
+                            <li>Manage website design, content, and SEO Marketing, Branding and Lego Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="name_dates">
+                            <h4>Ginyard International Co.</h4>
+                            <p class="dates_passing">2019 - 2020</p>
+                        </div>
+                        <h5>Product Design Manager</h5>
+                        <ul>
+                            <li>Working with the wider development team.</li>
+                            <li>Manage website design, content, and SEO Marketing, Branding and Lego Design</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="references">
+                    <h3 class="references_head">Achievements</h3>
+                    <div style="display: flex;align-items: center; justify-content: space-between;margin-top: 10px;">
+                        <div class="reference-item">
+                            <h4> Employee of the month </h4>
+                            <p>2019 - 2020</p>
+                            <p style="font-size: 12px;">Recognized for dedication, attention to detail, and consistently
+                                exceeding expectations
+                                in my role.</p>
+                            <!-- <p>Phone: 123-456-7890</p>
+                                                    <p>Email: hello@reallygreatsite.com</p> -->
+                        </div>
+
+                        <div class="reference-item">
+                            <h4>Employee of the month</h4>
+                            <p>2019 - 2018</p>
+                            <p style="font-size: 12px;">Recognized for dedication, attention to detail, and consistently
+                                exceeding expectations
+                                in my role.</p>
+                            <!-- <p>Phone: 123-456-7890</p>
+                            <p>Email: hello@reallygreatsite.com</p> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section class="basic_details">
+                    <div>
+                        <h3 class="basic_head"> Basic Details </h3>
+
+                        <div style="display: grid;grid-template-columns: repeat(2,1fr); font-size: 13px;">
+                            <div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Full Name : </p>
+                                    <p> Sofia Vergara </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Mobile Number : </p>
+                                    <p> +91 9876543210 </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Email : </p>
+                                    <p> johndoe@example.com </p>
+                                </div>
+
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Language : </p>
+                                    <p> English, Hindi </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Date of Birth : </p>
+                                    <p> 1990-05-15 </p>
+                                </div>
+                                <div style="display: flex; flex-wrap: wrap; column-gap: 10px; margin: 3px 0px;">
+                                    <p style="white-space: nowrap;">Address:</p>
+                                    <p style="white-space: nowrap;">123, ABC Street, New Delhi, India</p>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Job Role : </p>
+                                    <p> UI/UX Designer </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Website : </p>
+                                    <p> https://johndoe.com </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Current CTC : </p>
+                                    <p> 5 LPA </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Expected CTC : </p>
+                                    <p> 6.5 LPA </p>
+                                </div>
+                                <div style="display: flex;column-gap: 10px; margin: 3px 0px;">
+                                    <p> Gender : </p>
+                                    <p> Male </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                <section>
+                    <h3 class="references_head certificate_head"> Certificates </h3>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr);">
+                        <div>
+                            <div class="reference-item">
+                                <h4> XYZ Course Name </h4>
+                                <p style="font-size: 12px;">XYZ College</p>
+                                <p>Validity: Oct 22 to Dec 24</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="reference-item">
+                                <h4> XYZ Course Name </h4>
+                                <p style="font-size: 12px;">XYZ College</p>
+                                <p>Validity: Oct 22 to Dec 24</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3 class="references_head certificate_head"> Links </h3>
+                    <div>
+                        <ol
+                            style="display: grid;grid-template-columns: repeat(3,1fr);font-size: 12px;margin: 5px 12px 0px 12px;">
+                            <li> <a href="https://www.google.com/?authuser=0" class="links" target="_blank">
+                                    Portfolio </a> </li>
+                            <li> <a href="https://www.google.com/?authuser=0" class="links" target="_blank">
+                                    Facebook </a> </li>
+                            <li><a href="https://www.google.com/?authuser=0" class="links" target="_blank">
+                                    LinkedIn </a> </li>
+                            <li><a href="https://www.google.com/?authuser=0" class="links" target="_blank">
+                                    Website </a> </li>
+                        </ol>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

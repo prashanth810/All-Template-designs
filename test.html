@@ -1,0 +1,399 @@
+`
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip - ${monthAndYear}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Cedarville+Cursive&family=Great+Vibes&family=Italiana&family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body
+    style="font-family: Arial, sans-serif;font-family: montserrat; margin: 30px auto; width: 210mm; box-shadow: 0px 0px 5px 0px gray; background-color: white; color: #000;">
+    <div style="display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: center;
+    text-align: left;
+    padding: 0px;
+    border-bottom: 1px solid rgb(172, 172, 172);">
+        <img src="./assests/brandlogo.png" alt="Company Logo"
+            style="max-width: 150px; margin-bottom: 10px;padding: 10px ;">
+        <div>
+            <div style="font-size: 23px; font-weight: bold;color: #004080;margin-bottom: 6px;">
+                <p> BLUECS LIMITED </p>
+            </div>
+            <div style="font-size: 12px;">
+                <p> CIN Number: U74999TG2022PLC163533 | PAN No: AAKCB8163G </p>
+            </div>
+            <div style="font-size: 12px;padding: 4px 0px;">
+                <p> Address: MIG 205, Sector G, LDA Colony, Kanpur Road, </p>
+            </div>
+            <div style="font-size: 12px;">
+                <p> Katauli, Lucknow, Uttar Pradesh, India, 226102 , Email ID: Hr@bluecs.in </p>
+            </div>
+            <div style="font-size: 14px;"></div>
+        </div>
+        <div>
+            <!-- style="border: 1px solid lightblue;border-radius: 2%;" -->
+            <img src="./assests/qrcodes.jpg" style="max-width: 100px;" />
+        </div>
+    </div>
+
+    <div>
+        <div style="text-align: center;padding: 10px 0px 0px 0px;">
+            <p> Payslip for the month of : <span style="color: rgb(74, 74, 74);font-weight: bold;"> November 2024
+                </span> </p>
+        </div>
+
+        <div style="display: flex; justify-content:space-between;padding:30px 30px 20px 30px;column-gap: 10px;">
+            <div style="width: 40%; font-size: 13px;">
+                <div
+                    style="border: 3px solid #c4e9fb;border-radius: 8px; display: flex;flex-direction: column;row-gap: 23px;margin: 10px 0px 0px 0px;padding: 20px 5px;">
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Employee Name </p>
+                        <!-- <p>: ${employeename}</p> -->
+                        <p>: rag varan reddy abcd</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;">Department </p>
+                        <!-- <p>: ${department}</p> -->
+                        <p>: information technology </p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;">Designation </p>
+                        <!-- <p>: ${designation}</p> -->
+                        <p>: developer</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;">Job Location/Branch </p>
+                        <!-- <p>: ${officeLocation}</p> -->
+                        <p>: Pune </p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Employee ID </p>
+                        <!-- <p>: ${empId}</p> -->
+                        <p>: BHR2</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;">Date of Birth </p>
+                        <!-- <p>: ${dateOfBirth}</p> -->
+                        <p>: 1993-10-01</p>
+                    </div>
+
+
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> PAN </p>
+                        <!-- <p>: ${panNo}</p> -->
+                        <p>: ABCDE1234F</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> UAN </p>
+                        <!-- <p>: ${pf}</p> -->
+                        <p>: PF123456789</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Account No </p>
+                        <!-- <p>: ${accountNumber}</p> -->
+                        <p>: 123456789456</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> IFSC Code </p>
+                        <!-- <p>: ${ifsc}</p> -->
+                        <p>: SBIN0005943</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Bank Name </p>
+                        <p>: State bank of india </p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Date of Joining </p>
+                        <!-- <p>: ${dateOfJoining}</p> -->
+                        <p>: 2023-07-15</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> No of Working Days </p>
+                        <p>: 26 days</p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> LOP Days </p>
+                        <p>: 0 days</p>
+                    </div>
+                </div>
+
+                <div style="display: flex;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        margin: 13px 0px 0px 0px;
+                        border: 3px solid #c4e9fb;
+                        padding: 12px 10px;
+                        border-radius: 6px;">
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Gross Pay (A) </p>
+                        <p>: +30,000 </p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Deduction (B) </p>
+                        <p>: -2,000 </p>
+                    </div>
+
+                    <div style="display: grid;grid-template-columns: repeat(2,1fr); ">
+                        <p style="color: gray;"> Net Pay (A) </p>
+                        <p>: -28,000 </p>
+                    </div>
+                </div>
+                <div style="margin: 15px 0px 0px 0px;">
+                    <p style="letter-spacing: 1px;font-size: 14px;"> Net Pay In Words </p>
+                    <p style="font-size: 12px;letter-spacing: 2px;margin: 4px 0px 0px 0px;color: #2b2b2b;"> Twenty
+                        thousend
+                        ruppies only /-
+                    </p>
+                </div>
+            </div>
+
+
+            <div style="width: 60%;">
+                <fieldset
+                    style="border-radius: 15px;border:3px solid green;padding: 10px 5px 0px 5px; margin-bottom: 20px;">
+                    <legend style="margin: 0px 10px;padding: 0px 10px;"> Gross Pay (A) <span
+                            style="color: gray;font-size: 12px;margin-right: 7px;"> The
+                            Total money earned before deductions
+                        </span> </legend>
+                    <div
+                        style="width: 100%; border-collapse: separate; border-spacing: 10px; font-family: Arial, sans-serif;">
+                        <!-- Header Row -->
+                        <div style="
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                margin-bottom: 8px;
+                                padding: 12px 10px;
+                                font-weight: bold;
+                                font-size: 14px;
+                                border-radius: 6px;
+                            ">
+                            <p style="margin: 0; ">Earning</p>
+                            <p style="margin: 0;text-align: end;">Monthly</p>
+                            <p style="margin: 0;text-align: end;">Total Amount</p>
+                        </div>
+
+                        <!-- Salary Details -->
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            <!-- Row Template -->
+                            <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 15px;
+                                    background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                    padding: 12px 10px;
+                                    font-size: 13px;
+                                    border-radius: 6px;
+                                ">
+                                <p style="margin: 0;">Basic Salary</p>
+                                <p style="text-align: end;">6000</p>
+                                <p style="text-align: end;">6000</p>
+                                <!-- <p style="text-align: end;">${basicSalary}</p>
+                                <p style="text-align: end;">${basicSalary}</p> -->
+                            </div>
+
+                            <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 15px;
+                                    background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                    padding: 12px 10px;
+                                    font-size: 13px;
+                                    border-radius: 6px;
+                                ">
+                                <p style="margin: 0;">House Rent Allowance</p>
+                                <p style="text-align: end;">6000</p>
+                                <p style="text-align: end;">6000</p>
+                                <!-- <p style="text-align: end;">${houseRentAllowance}</p>
+                                <p style="text-align: end;">${houseRentAllowance}</p> -->
+                            </div>
+
+                            <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 15px;
+                                    background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                    padding: 12px 10px;
+                                    font-size: 13px;
+                                    border-radius: 6px;
+                                ">
+                                <p style="margin: 0;">Special Allowance</p>
+                                <p style="text-align: end;">60000</p>
+                                <p style="text-align: end;">60000</p>
+                                <!-- <p style="text-align: end;">${specialAllowance}</p>
+                                <p style="text-align: end;">${specialAllowance}</p> -->
+                            </div>
+
+                            <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 15px;
+                                    background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                    padding: 12px 10px;
+                                    font-size: 13px;
+                                    border-radius: 6px;
+                                ">
+                                <p style="margin: 0;">Leave & Travel Allowance</p>
+                                <p style="text-align: end;">7000</p>
+                                <p style="text-align: end;">7000</p>
+                                <!-- <p style="text-align: end;">${leaveAndavelAllowance}</p>
+                                <p style="text-align: end;">${leaveAndavelAllowance}</p> -->
+                            </div>
+
+                            <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 15px;
+                                    background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                    padding: 12px 10px;
+                                    font-size: 13px;
+                                    border-radius: 6px;
+                                ">
+                                <p style="margin: 0;">Other Allowance</p>
+                                <p style="text-align: end;">8000</p>
+                                <p style="text-align: end;">8000</p>
+                                <!-- <p style="text-align: end;">${otherAllowance}</p>
+                                <p style="text-align: end;">${otherAllowance}</p> -->
+                            </div>
+
+                            <!-- Gross Pay -->
+                            <div style="
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 15px;
+                                    background: linear-gradient(to right, #e7f7fe,#f2f9fc);
+                                    padding: 14px 10px;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    border-radius: 6px;
+                                ">
+                                <p style="margin: 0;"></p>
+                                <p style="text-align: end;">Gross Pay</p>
+                                <p style="text-align: end;">70000</p>
+                                <!-- <p style="text-align: end;">${basicSalary + houseRentAllowance +
+                                    specialAllowance +
+                                    leaveAndavelAllowance + otherAllowance}</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset style="border-radius: 15px;border:3px solid red;padding: 10px 5px 0px 5px;">
+                    <legend style="margin: 0px 2px;padding: 0px 10px;"> Deductions (B) <span
+                            style="color: gray;font-size: 12px;margin-right: 7px;"> The
+                            amount deducted to taxes and other benefits
+                        </span> </legend>
+                    <div style="width: 100%; border-collapse: separate; border-spacing: 10px;">
+                        <div style="display: grid;grid-template-columns: repeat(3,1fr);background: linear-gradient(to right, rgb(255, 230, 230),rgb(252, 237, 237));margin-bottom: 8px;padding: 10px 10px;
+                        font-weight: bold;
+                        font-size: 14px;">
+                            <p> Deductions </p>
+                            <p style="text-align: end;"> Monthly </p>
+                            <p style="text-align: end;"> Total Amount </p>
+                        </div>
+                        <div>
+                            <div
+                                style="display: grid;grid-template-columns: repeat(3,1fr);background: linear-gradient(to right, rgb(255, 230, 230),rgb(252, 237, 237));margin-bottom: 8px;padding: 10px 10px; font-size:12px; ">
+                                <p>PF Employee Contribution</p>
+                                <p style="text-align: end;">80000</p>
+                                <p style="text-align: end;">80000</p>
+                                <!-- <p style="text-align: end;">${pfEmployeeContribution}</p>
+                                <p style="text-align: end;">${pfEmployeeContribution}</p> -->
+                            </div>
+                            <div
+                                style="display: grid;grid-template-columns: repeat(3,1fr);background: linear-gradient(to right, rgb(255, 230, 230),rgb(252, 237, 237));margin-bottom: 8px;padding: 10px 10px; font-size:12px; ">
+                                <p>Professional Tax</p>
+                                <p style="text-align: end;">70000</p>
+                                <p style="text-align: end;">70000</p>
+                                <!-- <p style="text-align: end;">${professionalTax}</p>
+                                <p style="text-align: end;">${professionalTax}</p> -->
+                            </div>
+                            <div
+                                style="display: grid;grid-template-columns: repeat(3,1fr);background: linear-gradient(to right, rgb(255, 230, 230),rgb(252, 237, 237));margin-bottom: 8px;padding: 10px 10px; font-size:12px; ">
+                                <p>Leave Deduction</p>
+                                <p style="text-align: end;">9000</p>
+                                <p style="text-align: end;">9000</p>
+                                <!-- <p style="text-align: end;">${leaveDeductions}</p>
+                                <p style="text-align: end;">${leaveDeductions}</p> -->
+                            </div>
+                            <div
+                                style="display: grid;grid-template-columns: repeat(3,1fr);background: linear-gradient(to right, rgb(255, 230, 230),rgb(252, 237, 237));margin-bottom: 8px;padding: 10px 10px; font-size:12px; ">
+                                <p>Other Deduction</p>
+                                <p style="text-align: end;">80000</p>
+                                <p style="text-align: end;">80000</p>
+                                <!-- <p style="text-align: end;">${otherDeduction}</p>
+                                <p style="text-align: end;">${otherDeduction}</p> -->
+                            </div>
+
+                            <div
+                                style="display: grid;grid-template-columns: repeat(3,1fr);background: linear-gradient(to right, rgb(255, 230, 230),rgb(252, 237, 237));margin-bottom: 8px;padding: 10px 10px; font-size:12px;">
+                                <p></p>
+                                <p style="text-align: end;font-weight: bold;"> Total Deductions </p>
+                                <p style="text-align: end;font-weight: bold;"> $2,000 </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- <div style="display: flex; align-items: center; column-gap: 30px; font-size: 14px;">
+                    <div style="border-right: 4px solid green;padding-right: 30px;margin: 40px 0px;">
+                        <p style="color: rgb(88, 88, 88);">Gross Pay (A) </p>
+                        <p style="font-weight: bold;color: black; margin-top: 7px;text-align: end;"> +30,000 </p>
+                    </div>
+                    <div style="border-right: 4px solid red;padding-right: 30px;margin: 20px 0px;">
+                        <p style="color: rgb(88, 88, 88);;">Deduction (B) </p>
+                        <p style="font-weight: bold;color: black; margin-top: 7px;text-align: end"> -2,000 </p>
+                    </div>
+                    <div>
+                        <p style="color: rgb(88, 88, 88);;">Net Pay (A) </p>
+                        <p style="font-weight: bold;color: black; margin-top: 7px;text-align: end"> -28,000 </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div style="padding: 10px 35px 40px 30px;">
+
+            <div>
+                <p style="font-weight: bold;font-size: 13px;text-decoration: underline;"> </p>
+                <p style="font-size: 12px;color: #333;"><span style="font-weight: bold;">Note :</span> This is a
+                    computer-generated payslip and does not require
+                    a
+                    signature. </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

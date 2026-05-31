@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Sign-In Detected</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 600px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #1b1f24;
+            border: 1px solid lightgray;
+            margin-top: 30px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 27px;
+            border-bottom: 2px solid #bababa;
+            background-color: white;
+        }
+
+        header .settings {
+            font-size: 16px;
+            color: #1b1f24;
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .container .header {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #0b1c38;
+        }
+
+        .container .para {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #0b1c38;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .small-note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 12px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            background-color: rgb(241, 241, 241);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <header>
+            <div>
+                <img src="../assets/brandlogo.png" alt="Logo" height="42rem" />
+            </div>
+            <div>
+                <p class="settings">Settings</p>
+            </div>
+        </header>
+    </nav>
+
+    <section class="container">
+        <p style="font-size: 45px;padding: 10px 0px;"> <i class="fa-solid fa-arrow-right-to-bracket"></i> </p>
+        <p class="header">New sign-in detected</p>
+        <p class="para">
+            We noticed a new sign-in to your account on a device that we don't recognize. If this wasn't you,
+            we'll help you secure your account. Click on the button below to check the account activity.
+        </p>
+
+        <button style="border: none;">
+            <a class="btn" href="#Chnagepassword">Secure my account</a>
+        </button>
+        <p class="small-note">Please ignore if this was done by you.</p>
+    </section>
+
+    <footer class="footer">
+        You're receiving this email because we want to keep you updated about your account and prevent any
+        security issues. <br /><br />
+        © 2022. Company.com All rights reserved<br />
+        New York, 110043
+    </footer>
+</body>
+
+</html>

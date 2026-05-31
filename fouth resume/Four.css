@@ -1,0 +1,16 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.up_back_img {
+    background-image: url("../assets/updesign.png");
+    background-repeat: no-repeat;
+    height: 192px;
+    width: 100%;
+}

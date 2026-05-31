@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabel Mercado - Executive Secretary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="Experience.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Cedarville+Cursive&family=Great+Vibes&family=Italiana&family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+
+        .resume2 {
+            background-color: rgb(231, 231, 231);
+            padding: 7mm 10mm;
+            box-sizing: border-box;
+        }
+
+        .resume {
+            width: 210mm;
+            background-color: rgb(231, 231, 231);
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            padding: 15mm;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10mm;
+        }
+
+        .border_headers {
+            border-bottom: 5px solid gray;
+        }
+
+        .header .header_name {
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 3px solid gray;
+        }
+
+        .header .name_span {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .header .header_role {
+            color: #585858;
+            font-weight: bold;
+            font-size: 10pt;
+            margin: 5px 0 10px 0;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .icons_contacts {
+            background-color: rgb(63, 63, 63);
+            font-size: 11px;
+            color: white;
+            padding: 6px 5px 5px 5px;
+            border-radius: 50%;
+        }
+
+        .contact_addreses {
+            color: #585858;
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            cursor: pointer;
+        }
+
+        .contact_addreses:hover {
+            color: #272727;
+            transition: 0.8s;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            row-gap: 15px;
+            justify-content: end;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: rgb(45, 45, 45);
+        }
+
+        .section {
+            margin-bottom: 10mm;
+        }
+
+        .section .summaryyy_head {
+            font-size: 15pt;
+            color: rgb(80, 80, 80);
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section .summary_border-bottom {
+            border-bottom: 3px solid #797979;
+            width: 35%;
+            margin: 0px auto;
+        }
+
+        .summary_description {
+            color: rgb(80, 80, 80);
+        }
+
+        .border_right {
+            border-right: 2px solid #9a9999;
+        }
+
+        .section h3 {
+            font-size: 12pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+            margin-bottom: 3mm;
+        }
+
+        .section .skills_heading {
+            font-size: 14pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(80, 80, 80);
+            font-family: 'Playfair Display', serif;
+            border-bottom: 2px solid #797979;
+            width: 40%;
+            margin-bottom: 20px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 10pt;
+            line-height: 1.4;
+            margin: 2mm 0;
+        }
+
+        .section ul {
+            padding-left: 4mm;
+            margin-top: 2mm;
+        }
+
+        .section li {
+            margin-bottom: 1mm;
+        }
+
+        .section .certificates_heading {
+            font-size: 14pt;
+            text-transform: uppercase;
+            color: rgb(80, 80, 80);
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 2px solid #797979;
+            width: 55%;
+            margin-bottom: 20px;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 10mm;
+        }
+
+        .two-column .education_heading {
+            font-size: 14pt;
+            text-transform: uppercase;
+            color: rgb(80, 80, 80);
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 2px solid #797979;
+            width: 40%;
+            margin-bottom: 20px;
+        }
+
+
+        .column {
+            flex: 1;
+        }
+
+        .profectional_exp_nmaes {
+            font-weight: bold;
+        }
+
+        .exp_div_margin {
+            margin-top: 20px;
+        }
+
+
+        .column .professional_exprence {
+            font-size: 14pt;
+            text-transform: uppercase;
+            color: rgb(80, 80, 80);
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .professional_border_bottom {
+            border-bottom: 2px solid #8d8d8d;
+        }
+
+        ul li {
+            color: rgb(65, 65, 65);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <div class="header">
+            <div>
+                <p class="header_name">ISABEL <span class="name_span"> MERCADO </span></p>
+                <p class="header_role">Executive Secretary</p>
+            </div>
+
+            <div>
+                <div class="contact-info">
+                    <p class="contact_addreses">+123-456-7890 <i class="fa-solid fa-phone icons_contacts"></i>
+                    </p>
+                    <p class="contact_addreses">hello@reallygreatsite.com <i
+                            class="fa-solid fa-envelope icons_contacts"></i>
+                    </p>
+                    <p class="contact_addreses">123 Anywhere St., Any City <i
+                            class="fa-solid fa-house icons_contacts"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border_headers"></div>
+
+        <div class="resume2">
+            <div class="section">
+                <p class="summaryyy_head">SUMMARY</p>
+                <p class="summary_border-bottom"></p>
+                <p class="summary_description" style="line-height: 20px;">Highly motivated and professional Executive
+                    Secretary with over 7 years
+                    of experience providing
+                    high-level support to senior executives. Proficient in managing calendars, organizing meetings and
+                    events, handling confidential documents, and communicating with internal and external stakeholders.
+                    Possess exceptional communication and interpersonal skills with a proven ability to work
+                    independently
+                    and as part of a team.</p>
+            </div>
+
+            <div class="two-column">
+                <div class="column">
+                    <div class="section">
+                        <p class="education_heading">EDUCATION</p>
+                        <p><strong>Bachelor's Degree in Business Administration</strong><br>
+                            Ginyard International Co. University<br>
+                            2008-2020</p>
+
+                        <p><strong>Business Administration on Executive Assistance</strong><br>
+                            Studio Shodwe University<br>
+                            2020-2022</p>
+                    </div>
+
+                    <div class="section">
+                        <p class="skills_heading">SKILLS</p>
+                        <ul>
+                            <li>Strong organizational and time-management skills</li>
+                            <li>Exceptional communication and interpersonal skills</li>
+                            <li>Ability to work independently and as part of a team</li>
+                            <li>Detail-oriented and able to handle multiple tasks simultaneously</li>
+                            <li>Experience in managing budgets and handling financial documents</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <p class="certificates_heading">CERTIFICATIONS</p>
+                        <ul>
+                            <li>Executive Secretary and Business Administration Certification</li>
+                            <li>Advanced Executive Assistant and Office Manager Diploma</li>
+                            <li>Executive Office Professional Certificate Program</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border_right"></div>
+
+                <div class="column">
+                    <div class="section">
+                        <p class="professional_exprence">PROFESSIONAL EXPERIENCE</p>
+                        <p class="professional_border_bottom"> </p>
+                        <div class="exp_div_margin">
+                            <p class="profectional_exp_nmaes"> Executive Secretary </p>
+                            <p>Ingoude Company | 2018-Present</p>
+                        </div>
+                        <ul>
+                            <li>Manage the schedules and calendars of the CEO and other senior executives</li>
+                            <li>Coordinate and schedule meetings and conferences with internal and external stakeholders
+                            </li>
+                            <li>Prepare and distribute meeting agendas, minutes, and other relevant materials</li>
+
+                        </ul>
+
+                        <div class="exp_div_margin">
+                            <p class="profectional_exp_nmaes">Executive Assistant</p>
+                            <p>Wardiere Inc. | 2016-2018</p>
+                        </div>
+                        <ul>
+                            <li>Managed calendars, scheduled appointments, and arranged meetings and conferences</li>
+                            <li>Prepared and distributed reports, presentations, and other materials</li>
+                            <li>Handled confidential documents and maintained their proper organization</li>
+
+                        </ul>
+
+                        <div class="exp_div_margin">
+                            <p class="profectional_exp_nmaes">Executive Secretary Intern</p>
+                            <p>Aldenaire & Partners | 2015-2016</p>
+                        </div>
+                        <ul>
+                            <li>Assisted executive secretary in managing and coordinating schedules, meetings, and
+                                travel
+                                arrangements for senior executives</li>
+                            <li>Conducted research and prepared reports on various topics related to the company's
+                                operations and industry trends</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
